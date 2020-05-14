@@ -24,7 +24,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class DB_withdrawal_validation {
+public class DnCashwithdrawalValidation {
 
 	ExtentReports extentreport;
 	ExtentHtmlReporter htmlreporter;
@@ -36,9 +36,9 @@ public class DB_withdrawal_validation {
 
 
 		try {
-			DN_withdrawal_pojo dn_withdrawal_pojo=DN_web_withdrawal_inspection.login();
+			DNWithdrawalPojo dn_withdrawal_pojo=DnWithdrawalInspection.login();
 
-			Shclog_withdrawal_pojo shclog_withdrawal_pojo=ist_DB();
+			ShclogWithdrawalPojo shclog_withdrawal_pojo=ist_DB();
 
 			// Date parsing between SHC & DN
 
@@ -145,7 +145,7 @@ public class DB_withdrawal_validation {
 	
 	
 
-	public static Shclog_withdrawal_pojo ist_DB() throws SQLException, ClassNotFoundException, IOException {
+	public static ShclogWithdrawalPojo ist_DB() throws SQLException, ClassNotFoundException, IOException {
 
 
 		FileInputStream fileInputStream=new FileInputStream("configDN.properties");
@@ -167,7 +167,7 @@ public class DB_withdrawal_validation {
 
 		ResultSet rs = statement.executeQuery(databasequery);
 
-		Shclog_withdrawal_pojo shclog_withdrawal = new Shclog_withdrawal_pojo();
+		ShclogWithdrawalPojo shclog_withdrawal = new ShclogWithdrawalPojo();
 
 		while (rs.next()) {
 

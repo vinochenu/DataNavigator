@@ -27,7 +27,7 @@ import org.testng.annotations.Test;
 
 import com.google.common.net.HostSpecifier;
 
-public class DN_web_withdrawal_inspection {
+public class DnWithdrawalInspection {
 
 	
 
@@ -71,7 +71,7 @@ public class DN_web_withdrawal_inspection {
 
 
 
-	public static DN_withdrawal_pojo login() throws InterruptedException, IOException {
+	public static DNWithdrawalPojo login() throws InterruptedException, IOException {
 
 
 
@@ -221,7 +221,7 @@ public class DN_web_withdrawal_inspection {
 		System.out.println("Selected Transaction REFNO is " + Retrieval_REFNO);
 
 		// Assigning values to setRETRIEVAL_REF_NO()
-		DN_withdrawal_pojo dn_withdrawal = new DN_withdrawal_pojo();
+		DNWithdrawalPojo dn_withdrawal = new DNWithdrawalPojo();
 		dn_withdrawal.setRETRIEVAL_REF_NO(Retrieval_REFNO);
 
 		WebElement txn_Trace = driver.findElement(By.xpath("//*[@id=\"current\"]/div[3]/table/tbody/tr[5]/td[5]"));

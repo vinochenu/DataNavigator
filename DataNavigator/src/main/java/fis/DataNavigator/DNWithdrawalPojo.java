@@ -1,6 +1,6 @@
 package fis.DataNavigator;
 
-public class DN_withdrawal_pojo {
+public class DNWithdrawalPojo {
 	
 	int       UNIQUENESS_KEY  ;     
 	 String   TSTAMP_TRANS ;            

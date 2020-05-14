@@ -1,6 +1,6 @@
 package fis.DataNavigator;
 
-public class Shclog_withdrawal_pojo {
+public class ShclogWithdrawalPojo {
 	
 
 int MSGTYPE;
