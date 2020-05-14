@@ -1,4 +1,4 @@
-package DN_GUI;
+package fis.DataNavigator;
 
 public class Singleton {
 	

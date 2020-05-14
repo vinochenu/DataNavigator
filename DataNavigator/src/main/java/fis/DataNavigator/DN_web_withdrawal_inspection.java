@@ -1,4 +1,4 @@
-package DN_GUI;
+package fis.DataNavigator;
 
 import java.io.File;
 import java.io.FileInputStream;
