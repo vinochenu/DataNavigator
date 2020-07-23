@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 13, 2020 03:26:45 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 6, 2020 06:17:23 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -68,6 +68,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -110,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='36.842%'><span class='strong'>35</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='63.158%'>60</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -131,17 +132,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify Local Date between IST & DN for cash withdrawal transaction</span>
-						<span class='test-time'>May 13, 2020 03:26:46 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify acct_info1 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:23 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label end-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+6ms</span>
+	<span class='label start-time'>Jul 6, 2020 06:17:23 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -155,17 +156,17 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+				<td class='timestamp'>6:17:23 PM</td>
 				<td class='step-details'>
-						IST Date is 2020-05-05  DN Date is 2020-05-05
+						IST Segment acct_info1 is                                                                                                            &  DN Segment acct_info1 is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1
 					
 				</td>
 			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:23 PM</td>
 				<td class='step-details'>
-						IST & DN Date is matched for selected cash withdrawal Transaction
+						IST & DN acct_info1 under BBL Tab is not matched for selected cash withdrawal Transaction
 					
 				</td>
 			</tr>
@@ -174,16 +175,16 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify Trace between IST & DN for cash withdrawal transaction</span>
-						<span class='test-time'>May 13, 2020 03:26:46 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify acct_info2 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label end-time'>May 13, 2020 03:26:46 PM</span>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -198,60 +199,17 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST Trace is 166299 DN Trace is 166299
+						IST Segment acct_info2 is                                                                                                            &  DN Segment acct_info2 is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1
 					
 				</td>
 			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST & DN Trace is matched for selected cash withdrawal Transaction
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify Acquirer between IST & DN for cash withdrawal transaction</span>
-						<span class='test-time'>May 13, 2020 03:26:46 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label end-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
-				<td class='step-details'>
-						IST Acquirer is 8850000011 DN Acquirer is  8850000011
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
-				<td class='step-details'>
-						IST & DN Acquirer is matched for selected cash withdrawal Transaction
+						IST & DN acct_info2 under BBL Tab is not matched for selected cash withdrawal Transaction
 					
 				</td>
 			</tr>
@@ -260,16 +218,16 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify Issuer between IST & DN for cash withdrawal transaction</span>
-						<span class='test-time'>May 13, 2020 03:26:46 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify bblFiller3 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label end-time'>May 13, 2020 03:26:46 PM</span>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -284,17 +242,17 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST Issuer is 2000000001 DN Acquirer is  2000000001
+						IST Segment bblFiller3 is                          |  |               |    |      |  |  |  |      |                |            |                     &  DN Segment bblFiller3 is BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_F
 					
 				</td>
 			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST & DN Issuer is matched for selected cash withdrawal Transaction
+						IST & DN BBL_FILLER_3 under BBL Tab is not matched for selected cash withdrawal Transaction
 					
 				</td>
 			</tr>
@@ -303,16 +261,16 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify REF number between IST & DN for cash withdrawal transaction</span>
-						<span class='test-time'>May 13, 2020 03:26:46 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify bblFiller4 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label end-time'>May 13, 2020 03:26:46 PM</span>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -327,17 +285,17 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST REF number is 000000062562 DN REF number is  000000062562
+						IST Segment bblFiller4 is                |                   |                    |                    |                    |               |         &  DN Segment bblFiller4 is BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_F
 					
 				</td>
 			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST & DN REF number is matched for selected cash withdrawal Transaction
+						IST & DN BBL_FILLER_4 under BBL Tab is not matched for selected cash withdrawal Transaction
 					
 				</td>
 			</tr>
@@ -346,16 +304,16 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify Approvalcode between IST & DN for cash withdrawal transaction</span>
-						<span class='test-time'>May 13, 2020 03:26:46 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify bblFiller5 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 13, 2020 03:26:46 PM</span>
-	<span class='label end-time'>May 13, 2020 03:26:46 PM</span>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -370,17 +328,3887 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST Approvalcode is null DN Approvalcode is  725217
+						IST Segment bblFiller5 is           |   |221|-30|   |      |      |      |  |   |  |01 |  |                                                           &  DN Segment bblFiller5 is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BBL_FILLER_5 under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify bblFiller2 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment bblFiller2 is     |               |TH|      |                      &  DN Segment bblFiller2 is BBL*BBL_FILLER2*BBL*BBL_FILLER2*BBL*BBL_FILLER2*BB
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BBL_FILLER_2 under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify bbl_private under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment bbl_private is 05|00|                         |20200511|  | |  |    &  DN Segment bbl_private is IVATE*DATA*BBL*PRIVATE*DATA*BBL*PRIVATE*DA
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN bbl_private under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BILL_REFERENCE2 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BILL_REFERENCE2 is                                             &  DN Segment BILL_REFERENCE2 is BBL*REF_2*BBL*REF_2*BBL*REF_2*BBL*REF_2*B
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BILL_REFERENCE2 under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ACQ_ROUTING_NO under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment ACQ_ROUTING_NO is 0020000000   &  DN Segment ACQ_ROUTING_NO is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN ACQ_ROUTING_NO under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ATCResult under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment ATCResult is    &  DN Segment ATCResult is A
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN ATCResult under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ATM_Terminal_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment ATM_Terminal_ID is S717B001A118       &  DN Segment ATM_Terminal_ID is 00010001
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN ATM_Terminal_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify bblATM_Terminal_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment bblATM_Terminal_ID is S717B001A118       &  DN Segment bblATM_Terminal_ID is 1234567890123456
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN bblATM_Terminal_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CARD_OWNER under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CARD_OWNER is MS N   &  DN Segment CARD_OWNER is Visa
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CARD_OWNER under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_FILLER_1 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BBL_FILLER_1 is                                         | |          &  DN Segment BBL_FILLER_1 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BBL_FILLER_1 under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBLRefNo under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BBLRefNo is 2020051115350801004837401  &   DN Segment BBLRefNo  is 2020050516552001005215304
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BBLRefNo under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BILL_REFERENCE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BILL_REFERENCE is                     |                    |                      &   DN Segment BILL_REFERENCE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BILL_REFERENCE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BOND_YIELD under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BOND_YIELD is          &  DN Segment BOND_YIELD is Yield
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BOND_YIELD under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BPDUE_RTPEXP_DATE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BPDUE_RTPEXP_DATE is                    &  DN Segment BPDUE_RTPEXP_DATE is
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:26:46 PM</td>
+				<td class='timestamp'>6:17:24 PM</td>
 				<td class='step-details'>
-						IST & DN Approvalcode is not matched for selected cash withdrawal Transaction
+						IST & DN BPDUE_RTPEXP_DATE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BP_URL under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment BP_URL is                                                                                                        &  DN Segment BP_URL is www.billpay.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN BP_URL under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify cardBrand under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment cardBrand is BBLVDB       &  DN Segment cardBrand is BBL_Visa
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN cardBrand under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify card_location under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment card_location is    &  DN Segment card_location is W
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN card_location under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Card_Owner_BranchCode under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Card_Owner_BranchCode is 0101   &  DN Segment Card_Owner_BranchCode is 1234
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Card_Owner_BranchCode under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify card_scheme under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment card_scheme is 0101   &  DN Segment card_scheme is 1234
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN card_scheme under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CDM_DATA under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CDM_DATA is                                                                                                        &  DN Segment CDM_DATA is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CDM_DATA under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify COMPANY_CODE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment COMPANY_CODE is           &  DN Segment COMPANY_CODE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN COMPANY_CODE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CREDIT_NOTIF_REF under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CREDIT_NOTIF_REF is                    &  DN Segment CREDIT_NOTIF_REF is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CREDIT_NOTIF_REF under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CrossBorderFlag under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CrossBorderFlag is N  &  DN Segment CrossBorderFlag is N
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CrossBorderFlag under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CVV2AcquirerResult under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CVV2AcquirerResult is    &  DN Segment CVV2AcquirerResult is E
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CVV2AcquirerResult under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CVV2IssuerResult under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CVV2IssuerResult is    &  DN Segment CVV2IssuerResult is E
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CVV2IssuerResult under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CVV2PresenceIndicator under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CVV2PresenceIndicator is    &  DN Segment CVV2PresenceIndicator is F
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CVV2PresenceIndicator under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CVV2ResponseIndicator under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment CVV2ResponseIndicator is    &  DN Segment CVV2ResponseIndicator is F
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN CVV2ResponseIndicator under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify DCC_Home_CCY_Name under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment DCC_Home_CCY_Name is 764   &  DN Segment DCC_Home_CCY_Name is THB
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN DCC_Home_CCY_Name under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify DEST_ROUTING_NO under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment DEST_ROUTING_NO is              &  DN Segment DEST_ROUTING_NO is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN DEST_ROUTING_NO under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify deviceTypeChannel under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment deviceTypeChannel is 30    &  DN Segment deviceTypeChannel is 01
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN deviceTypeChannel under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify EXT_FROM_ACCT_TYPE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment EXT_FROM_ACCT_TYPE is 00   &  DN Segment EXT_FROM_ACCT_TYPE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN EXT_FROM_ACCT_TYPE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify EXT_TO_ACCT_TYPE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment EXT_TO_ACCT_TYPE is 00   &  DN Segment EXT_TO_ACCT_TYPE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN EXT_TO_ACCT_TYPE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FLAGS under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment FLAGS is   1                           N   0                  &  DN Segment FLAGS is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN FLAGS under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FromAcctDispName under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment FromAcctDispName is ENG_NAME                                             &  DN Segment FromAcctDispName is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN FromAcctDispName under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FROM_ACCT_NAME under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment FROM_ACCT_NAME is                                                      &  DN Segment FromAcctDispName is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN FROM_ACCT_NAME under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FrAcct_Owner_Branch under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment FrAcct_Owner_Branch is 1194   &  DN Segment FrAcct_Owner_Branch is 5678
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN FrAcct_Owner_Branch under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FRM_FUND_CODE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment FRM_FUND_CODE is                   &  DN Segment FRM_FUND_CODE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN FRM_FUND_CODE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify IR_Counter under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment IR_Counter is      &  DN Segment IR_Counter is 12
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN IR_Counter under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify IR_Flag under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment IR_Flag is N    &  DN Segment IR_Flag is N
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN IR_Flag under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify IssRoutingNo under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment IssRoutingNo is 0020000000   &  DN Segment IssRoutingNo is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN IssRoutingNo under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Original_Card_Owner under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Original_Card_Owner is BBDC   &  DN Segment Original_Card_Owner is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Original_Card_Owner under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Original_Terminal_Owner under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Original_Terminal_Owner is BBLA   &  DN Segment Original_Terminal_Owner is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Original_Terminal_Owner under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Oth_Bank_Use_Counter under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Oth_Bank_Use_Counter is      &  DN Segment Oth_Bank_Use_Counter is 00
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Oth_Bank_Use_Counter under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify OTP under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment OTP is      &  DN Segment OTP is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN OTP under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Partial_Reverse_Amount under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Partial_Reverse_Amount is                &  DN Segment OTP is 000000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Partial_Reverse_Amount under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYEE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment PAYEE is                             &  DN Segment PAYEE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN PAYEE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='51'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYMENT_1 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment PAYMENT_1 is                        &  DN Segment PAYMENT_1 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN PAYMENT_1 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='52'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYMENT_2 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment PAYMENT_2 is                        &  DN Segment PAYMENT_2 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN PAYMENT_2 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYMENT_3 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment PAYMENT_3 is                        &  DN Segment PAYMENT_3 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN PAYMENT_3 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='54'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify QRC_VOUCHER under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment QRC_VOUCHER is                        &  DN Segment QRC_VOUCHER is QRCVoucher1234567890
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN QRC_VOUCHER under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_COMP_ACCT_NO under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment RECV_COMP_ACCT_NO is                       &  DN Segment RECV_COMP_ACCT_NO is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN RECV_COMP_ACCT_NO under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='56'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_COMP_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment RECV_COMP_TAX_ID is                       &  DN Segment RECV_COMP_TAX_ID is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN RECV_COMP_TAX_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='57'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_PROXY_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment RECV_PROXY_ID is                                                                                                                                    &  DN Segment RECV_PROXY_ID is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN RECV_PROXY_ID under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_PROXY_TYPE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment RECV_PROXY_TYPE is                &  DN Segment RECV_PROXY_TYPE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN RECV_PROXY_TYPE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment RECV_TAX_ID is                       &  DN Segment RECV_TAX_ID is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN RECV_TAX_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify REF_NO under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment REF_NO is                                                      &  DN Segment REF_NO is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN REF_NO under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='61'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_COMP_ACCT_NO under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_COMP_ACCT_NO is                       &  DN Segment SENDER_COMP_ACCT_NO is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_COMP_ACCT_NO under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_COMP_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_COMP_TAX_ID is                       &  DN Segment SENDER_COMP_TAX_ID is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_COMP_TAX_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='63'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_COMP_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_COMP_TAX_ID is                       &  DN Segment SENDER_COMP_TAX_ID is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_COMP_TAX_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_REF_NO under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_REF_NO is                        &  DN Segment SENDER_REF_NO is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_REF_NO under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='65'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_TAX_ID is                       &  DN Segment SENDER_TAX_ID is 9876543210987654321
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_TAX_ID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_PROXY_ID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_PROXY_ID is                                                                                                                                    &  DN Segment SENDER_PROXY_ID is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_PROXY_ID under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_PROXY_TYPE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SENDER_PROXY_TYPE is                &  DN Segment SENDER_PROXY_TYPE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SENDER_PROXY_TYPE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='68'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SERVICE_CODE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SERVICE_CODE is                &  DN Segment SERVICE_CODE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SERVICE_CODE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SMS_FEE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SMS_FEE is          &  DN Segment SMS_FEE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SMS_FEE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='70'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SMS_MOBILE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SMS_MOBILE is                   &  DN Segment SMS_MOBILE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SMS_MOBILE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='71'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify STANDIN_ACT under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment STANDIN_ACT is O  &  DN Segment STANDIN_ACT is N
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN STANDIN_ACT under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='72'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SURCHARGE_FEE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SURCHARGE_FEE is                 &  DN Segment SURCHARGE_FEE is 0000000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SURCHARGE_FEE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='73'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TAX_INVOICE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment TAX_INVOICE is                                                      &  DN Segment TAX_INVOICE is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN TAX_INVOICE under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='74'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Terminal_Owner_BranchCode under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Terminal_Owner_BranchCode is 0001   &  DN Segment Terminal_Owner_BranchCode is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Terminal_Owner_BranchCode under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='75'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Terminal_Provice_RegionID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment Terminal_Provice_RegionID is 0010   &  DN Segment Terminal_Provice_RegionID is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN Terminal_Provice_RegionID under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TO_ACCT_DISP_NAME under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment TO_ACCT_DISP_NAME is                                                      &  DN Segment TO_ACCT_DISP_NAME is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN TO_ACCT_DISP_NAME under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='77'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TO_ACCT_NAME under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment TO_ACCT_NAME is                                                      &  DN Segment TO_ACCT_DISP_NAME is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN TO_ACCT_NAME under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='78'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ToAcct_Owner_Branch under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment ToAcct_Owner_Branch is 0000   &  DN Segment ToAcct_Owner_Branch is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN ToAcct_Owner_Branch under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='79'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TO_FUND_CODE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment TO_FUND_CODE is                   &  DN Segment ToAcct_Owner_Branch is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN TO_FUND_CODE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='80'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify txn_service under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment txn_service is          &  DN Segment ToAcct_Owner_Branch is W
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN txn_service under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='81'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TYPE_OF_INCOME under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment TYPE_OF_INCOME is       &  DN Segment TYPE_OF_INCOME is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN TYPE_OF_INCOME under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='82'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify UNIT_PRICE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment UNIT_PRICE is               &  DN Segment TYPE_OF_INCOME is 00000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN UNIT_PRICE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='83'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify UNIT under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment UNIT is                |                  &  DN Segment UNIT is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN UNIT under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='84'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_1 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment USER_DATA_1 is                             &  DN Segment USER_DATA_1 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN USER_DATA_1 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='85'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_2 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment USER_DATA_2 is                             &  DN Segment USER_DATA_2 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN USER_DATA_2 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='86'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_3 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment USER_DATA_3 is                             &  DN Segment USER_DATA_3 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN USER_DATA_3 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='87'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_4 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment USER_DATA_4 is                             &  DN Segment USER_DATA_4 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN USER_DATA_4 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='88'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_5 under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment USER_DATA_5 is                             &  DN Segment USER_DATA_5 is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN USER_DATA_5 under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='89'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify VAT under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment VAT is                &  DN Segment VAT is 0000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN VAT under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='90'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify VAT_RATE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment VAT_RATE is        &  DN Segment VAT_RATE is 0000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN VAT_RATE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='91'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify WHT_TAX_COND under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment WHT_TAX_COND is    &  DN Segment WHT_TAX_COND is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN WHT_TAX_COND under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='92'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify WHT_TAX_RATE under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment WHT_TAX_RATE is        &  DN Segment WHT_TAX_RATE is 0000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN WHT_TAX_RATE under BBL Tab is not matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='93'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify WHT_TAX under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment WHT_TAX is                &  DN Segment WHT_TAX is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN WHT_TAX under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='94'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RecvProxyID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment RecvProxyID is                                                                                                                                    &  DN Segment RecvProxyID is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN RecvProxyID under BBL Tab is matched for selected cash withdrawal Transaction
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='95'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SendProxyID under BBL Tab between IST & DN for cash withdrawal transaction</span>
+						<span class='test-time'>Jul 6, 2020 06:17:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label end-time'>Jul 6, 2020 06:17:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST Segment SendProxyID is                                                                                                                                    &  DN Segment SendProxyID  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:17:24 PM</td>
+				<td class='step-details'>
+						IST & DN SendProxyID under BBL Tab is matched for selected cash withdrawal Transaction
 					
 				</td>
 			</tr>
@@ -417,7 +4245,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>95</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -429,19 +4257,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 13, 2020 03:26:45 PM</div>
+					<div class='panel-lead'>Jul 6, 2020 06:17:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 13, 2020 03:26:46 PM</div>
+			 		<div class='panel-lead'>Jul 6, 2020 06:17:24 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+852ms</div>
+					<div class='panel-lead'>0h 0m 1s+34ms</div>
 				</div>
 			</div>
 		</div>
@@ -452,14 +4280,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 6,
-				passParent: 6,
-				failParent: 0,
+                parentCount: 95,
+				passParent: 35,
+				failParent: 60,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 60,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -484,7 +4312,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Verify Local Date between IST & DN for cash withdrawal transaction":0.006,"Verify Trace between IST & DN for cash withdrawal transaction":0,"Verify Acquirer between IST & DN for cash withdrawal transaction":0.001,"Verify Issuer between IST & DN for cash withdrawal transaction":0,"Verify REF number between IST & DN for cash withdrawal transaction":0,"Verify Approvalcode between IST & DN for cash withdrawal transaction":0
+			        "Verify acct_info1 under BBL Tab between IST & DN for cash withdrawal transaction":0.015,"Verify acct_info2 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify bblFiller3 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify bblFiller4 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify bblFiller5 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify bblFiller2 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify bbl_private under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BILL_REFERENCE2 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify ACQ_ROUTING_NO under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify ATCResult under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify ATM_Terminal_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify bblATM_Terminal_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CARD_OWNER under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BBL_FILLER_1 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BBLRefNo under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BILL_REFERENCE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BOND_YIELD under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BPDUE_RTPEXP_DATE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify BP_URL under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify cardBrand under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify card_location under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Card_Owner_BranchCode under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify card_scheme under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CDM_DATA under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify COMPANY_CODE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CREDIT_NOTIF_REF under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CrossBorderFlag under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CVV2AcquirerResult under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CVV2IssuerResult under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CVV2PresenceIndicator under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify CVV2ResponseIndicator under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify DCC_Home_CCY_Name under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify DEST_ROUTING_NO under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify deviceTypeChannel under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify EXT_FROM_ACCT_TYPE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify EXT_TO_ACCT_TYPE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify FLAGS under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify FromAcctDispName under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify FROM_ACCT_NAME under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify FrAcct_Owner_Branch under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify FRM_FUND_CODE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify IR_Counter under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify IR_Flag under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify IssRoutingNo under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Original_Card_Owner under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Original_Terminal_Owner under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Oth_Bank_Use_Counter under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify OTP under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Partial_Reverse_Amount under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify PAYEE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify PAYMENT_1 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify PAYMENT_2 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify PAYMENT_3 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify QRC_VOUCHER under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify RECV_COMP_ACCT_NO under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify RECV_COMP_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify RECV_PROXY_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify RECV_PROXY_TYPE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify RECV_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify REF_NO under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_COMP_ACCT_NO under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_COMP_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_COMP_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_REF_NO under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_TAX_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_PROXY_ID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SENDER_PROXY_TYPE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SERVICE_CODE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SMS_FEE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SMS_MOBILE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify STANDIN_ACT under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SURCHARGE_FEE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify TAX_INVOICE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Terminal_Owner_BranchCode under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify Terminal_Provice_RegionID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify TO_ACCT_DISP_NAME under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify TO_ACCT_NAME under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify ToAcct_Owner_Branch under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify TO_FUND_CODE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify txn_service under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify TYPE_OF_INCOME under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify UNIT_PRICE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify UNIT under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify USER_DATA_1 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify USER_DATA_2 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify USER_DATA_3 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify USER_DATA_4 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify USER_DATA_5 under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify VAT under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify VAT_RATE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify WHT_TAX_COND under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify WHT_TAX_RATE under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify WHT_TAX under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify RecvProxyID under BBL Tab between IST & DN for cash withdrawal transaction":0,"Verify SendProxyID under BBL Tab between IST & DN for cash withdrawal transaction":0
 			};
 		</script>
 	

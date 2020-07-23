@@ -2,6 +2,19 @@ package fis.DataNavigator;
 
 public class ShcgenericlogPojo {
 	
+	//creation of singleton class object
+	
+	public static ShcgenericlogPojo shcgenericlogPojo=new ShcgenericlogPojo();
+	
+	private ShcgenericlogPojo() {
+		
+	}
+	
+	public static ShcgenericlogPojo getinstance() {
+		return shcgenericlogPojo;
+	}
+	
+	
 	//DNSEGMENT
 
 	   String CrossBorderFlag;           
@@ -104,7 +117,7 @@ public class ShcgenericlogPojo {
 	   String Unit;
 	   String UnitPrice;
 	   String BondYield;
-	   String SurStringge_Fee;
+	   String Surcharge_Fee;
 	   String ExtFromAcctType;
 	   String ExtToAcctType;
 	String FromAcctDispName;     
@@ -117,7 +130,7 @@ public class ShcgenericlogPojo {
     String    alt_merchant_id;
     String    alt_terminal_id;
     String    card_category;
-    short   clerk_id;
+    String   clerk_id;
     String  debit_proc_busday;
     String    device_type;
     String    issuer_proc_id;
@@ -131,27 +144,27 @@ public class ShcgenericlogPojo {
     
 
     String      term_txn_date;         
-    short      cvv_res_code;               
-    short      card_auth_res_code;         
-    short      term_type;                  
-    short      term_entry_cap;             
-    short      chip_cond_code;             
-    short      ccps_txn_ind;               
-    short      card_auth_rel_ind;          
-    short      msg_reason_code;            
-    short      deri_key_idx;               
-    short      crypto_version;             
-    short      crypto_txn_type;            
-    short      term_country_code;          
-    short      crypto_curr_code;           
-    short      neg_file_version;           
-    short      ccard_pa_trace;             
-    short      ccard_purch_trace;          
-    short      ccard_crypto_trace;         
-    short      mcard_batch_trace;          
-    short      mcard_txn_trace;            
-    float      crypto_amount;              
-    float      crypto_cb_amount;           
+    String      cvv_res_code;               
+    String      card_auth_res_code;         
+    String      term_type;                  
+    String      term_entry_cap;             
+    String      chip_cond_code;             
+    String      ccps_txn_ind;               
+    String      card_auth_rel_ind;          
+    String      msg_reason_code;            
+    String      deri_key_idx;               
+    String      crypto_version;             
+    String      crypto_txn_type;            
+    String      term_country_code;          
+    String      crypto_curr_code;           
+    String      neg_file_version;           
+    String      ccard_pa_trace;             
+    String      ccard_purch_trace;          
+    String      ccard_crypto_trace;         
+    String      mcard_batch_trace;          
+    String      mcard_txn_trace;            
+    String      crypto_amount;              
+    String      crypto_cb_amount;           
     String        srv_restrict_code;    
     String        term_cap_profile;     
     String        tvr;                 
@@ -166,15 +179,27 @@ public class ShcgenericlogPojo {
     String        issuer_script_res; 
    String        arpc_respcode;                           
    String        ccard_sch_crypto;
-  short       chip_type;
+  String       chip_type;
   String    issuer_app_data;
   int      trans_seq_counter;   		
   String        cvm_results; 
   String  bitmap;
-  short       tvr_cvr_status;
+  String       tvr_cvr_status;
   String            issuer_auth_data;
   String        form_factor;
+  String site_id;
   
+  
+  
+  
+public String getSite_id() {
+	return site_id;
+}
+
+public void setSite_id(String site_id) {
+	this.site_id = site_id;
+}
+
 public String getCrossBorderFlag() {
 	return CrossBorderFlag;
 }
@@ -757,11 +782,11 @@ public String getBondYield() {
 public void setBondYield(String bondYield) {
 	BondYield = bondYield;
 }
-public String getSurStringge_Fee() {
-	return SurStringge_Fee;
+public String getSurcharge_Fee() {
+	return Surcharge_Fee;
 }
-public void setSurStringge_Fee(String surStringge_Fee) {
-	SurStringge_Fee = surStringge_Fee;
+public void setSurcharge_Fee(String surcharge_Fee) {
+	Surcharge_Fee = surcharge_Fee;
 }
 public String getExtFromAcctType() {
 	return ExtFromAcctType;
@@ -817,10 +842,10 @@ public String getCard_category() {
 public void setCard_category(String card_category) {
 	this.card_category = card_category;
 }
-public short getClerk_id() {
+public String getClerk_id() {
 	return clerk_id;
 }
-public void setClerk_id(short clerk_id) {
+public void setClerk_id(String clerk_id) {
 	this.clerk_id = clerk_id;
 }
 public String getDebit_proc_busday() {
@@ -877,130 +902,130 @@ public String getTerm_txn_date() {
 public void setTerm_txn_date(String term_txn_date) {
 	this.term_txn_date = term_txn_date;
 }
-public short getCvv_res_code() {
+public String getCvv_res_code() {
 	return cvv_res_code;
 }
-public void setCvv_res_code(short cvv_res_code) {
+public void setCvv_res_code(String cvv_res_code) {
 	this.cvv_res_code = cvv_res_code;
 }
-public short getCard_auth_res_code() {
+public String getCard_auth_res_code() {
 	return card_auth_res_code;
 }
-public void setCard_auth_res_code(short card_auth_res_code) {
+public void setCard_auth_res_code(String card_auth_res_code) {
 	this.card_auth_res_code = card_auth_res_code;
 }
-public short getTerm_type() {
+public String getTerm_type() {
 	return term_type;
 }
-public void setTerm_type(short term_type) {
+public void setTerm_type(String term_type) {
 	this.term_type = term_type;
 }
-public short getTerm_entry_cap() {
+public String getTerm_entry_cap() {
 	return term_entry_cap;
 }
-public void setTerm_entry_cap(short term_entry_cap) {
+public void setTerm_entry_cap(String term_entry_cap) {
 	this.term_entry_cap = term_entry_cap;
 }
-public short getChip_cond_code() {
+public String getChip_cond_code() {
 	return chip_cond_code;
 }
-public void setChip_cond_code(short chip_cond_code) {
+public void setChip_cond_code(String chip_cond_code) {
 	this.chip_cond_code = chip_cond_code;
 }
-public short getCcps_txn_ind() {
+public String getCcps_txn_ind() {
 	return ccps_txn_ind;
 }
-public void setCcps_txn_ind(short ccps_txn_ind) {
+public void setCcps_txn_ind(String ccps_txn_ind) {
 	this.ccps_txn_ind = ccps_txn_ind;
 }
-public short getCard_auth_rel_ind() {
+public String getCard_auth_rel_ind() {
 	return card_auth_rel_ind;
 }
-public void setCard_auth_rel_ind(short card_auth_rel_ind) {
+public void setCard_auth_rel_ind(String card_auth_rel_ind) {
 	this.card_auth_rel_ind = card_auth_rel_ind;
 }
-public short getMsg_reason_code() {
+public String getMsg_reason_code() {
 	return msg_reason_code;
 }
-public void setMsg_reason_code(short msg_reason_code) {
+public void setMsg_reason_code(String msg_reason_code) {
 	this.msg_reason_code = msg_reason_code;
 }
-public short getDeri_key_idx() {
+public String getDeri_key_idx() {
 	return deri_key_idx;
 }
-public void setDeri_key_idx(short deri_key_idx) {
+public void setDeri_key_idx(String deri_key_idx) {
 	this.deri_key_idx = deri_key_idx;
 }
-public short getCrypto_version() {
+public String getCrypto_version() {
 	return crypto_version;
 }
-public void setCrypto_version(short crypto_version) {
+public void setCrypto_version(String crypto_version) {
 	this.crypto_version = crypto_version;
 }
-public short getCrypto_txn_type() {
+public String getCrypto_txn_type() {
 	return crypto_txn_type;
 }
-public void setCrypto_txn_type(short crypto_txn_type) {
+public void setCrypto_txn_type(String crypto_txn_type) {
 	this.crypto_txn_type = crypto_txn_type;
 }
-public short getTerm_country_code() {
+public String getTerm_country_code() {
 	return term_country_code;
 }
-public void setTerm_country_code(short term_country_code) {
+public void setTerm_country_code(String term_country_code) {
 	this.term_country_code = term_country_code;
 }
-public short getCrypto_curr_code() {
+public String getCrypto_curr_code() {
 	return crypto_curr_code;
 }
-public void setCrypto_curr_code(short crypto_curr_code) {
+public void setCrypto_curr_code(String crypto_curr_code) {
 	this.crypto_curr_code = crypto_curr_code;
 }
-public short getNeg_file_version() {
+public String getNeg_file_version() {
 	return neg_file_version;
 }
-public void setNeg_file_version(short neg_file_version) {
+public void setNeg_file_version(String neg_file_version) {
 	this.neg_file_version = neg_file_version;
 }
-public short getCcard_pa_trace() {
+public String getCcard_pa_trace() {
 	return ccard_pa_trace;
 }
-public void setCcard_pa_trace(short ccard_pa_trace) {
+public void setCcard_pa_trace(String ccard_pa_trace) {
 	this.ccard_pa_trace = ccard_pa_trace;
 }
-public short getCcard_purch_trace() {
+public String getCcard_purch_trace() {
 	return ccard_purch_trace;
 }
-public void setCcard_purch_trace(short ccard_purch_trace) {
+public void setCcard_purch_trace(String ccard_purch_trace) {
 	this.ccard_purch_trace = ccard_purch_trace;
 }
-public short getCcard_crypto_trace() {
+public String getCcard_crypto_trace() {
 	return ccard_crypto_trace;
 }
-public void setCcard_crypto_trace(short ccard_crypto_trace) {
+public void setCcard_crypto_trace(String ccard_crypto_trace) {
 	this.ccard_crypto_trace = ccard_crypto_trace;
 }
-public short getMcard_batch_trace() {
+public String getMcard_batch_trace() {
 	return mcard_batch_trace;
 }
-public void setMcard_batch_trace(short mcard_batch_trace) {
+public void setMcard_batch_trace(String mcard_batch_trace) {
 	this.mcard_batch_trace = mcard_batch_trace;
 }
-public short getMcard_txn_trace() {
+public String getMcard_txn_trace() {
 	return mcard_txn_trace;
 }
-public void setMcard_txn_trace(short mcard_txn_trace) {
+public void setMcard_txn_trace(String mcard_txn_trace) {
 	this.mcard_txn_trace = mcard_txn_trace;
 }
-public float getCrypto_amount() {
+public String getCrypto_amount() {
 	return crypto_amount;
 }
-public void setCrypto_amount(float crypto_amount) {
+public void setCrypto_amount(String crypto_amount) {
 	this.crypto_amount = crypto_amount;
 }
-public float getCrypto_cb_amount() {
+public String getCrypto_cb_amount() {
 	return crypto_cb_amount;
 }
-public void setCrypto_cb_amount(float crypto_cb_amount) {
+public void setCrypto_cb_amount(String crypto_cb_amount) {
 	this.crypto_cb_amount = crypto_cb_amount;
 }
 public String getSrv_restrict_code() {
@@ -1087,10 +1112,10 @@ public String getCcard_sch_crypto() {
 public void setCcard_sch_crypto(String ccard_sch_crypto) {
 	this.ccard_sch_crypto = ccard_sch_crypto;
 }
-public short getChip_type() {
+public String getChip_type() {
 	return chip_type;
 }
-public void setChip_type(short chip_type) {
+public void setChip_type(String chip_type) {
 	this.chip_type = chip_type;
 }
 public String getIssuer_app_data() {
@@ -1117,10 +1142,10 @@ public String getBitmap() {
 public void setBitmap(String bitmap) {
 	this.bitmap = bitmap;
 }
-public short getTvr_cvr_status() {
+public String getTvr_cvr_status() {
 	return tvr_cvr_status;
 }
-public void setTvr_cvr_status(short tvr_cvr_status) {
+public void setTvr_cvr_status(String tvr_cvr_status) {
 	this.tvr_cvr_status = tvr_cvr_status;
 }
 public String getIssuer_auth_data() {

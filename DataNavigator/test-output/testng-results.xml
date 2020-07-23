@@ -1,48 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96618" started-at="2020-05-13T09:34:52Z" finished-at="2020-05-13T09:36:28Z">
+  <suite name="Default suite" duration-ms="195922" started-at="2020-07-23T15:15:55Z" finished-at="2020-07-23T15:19:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96618" started-at="2020-05-13T09:34:52Z" finished-at="2020-05-13T09:36:28Z">
-      <class name="DN_GUI.DB_withdrawal_validation">
-        <test-method status="FAIL" signature="compareDB()[pri:0, instance:DN_GUI.DB_withdrawal_validation@1134affc]" name="compareDB" duration-ms="96566" started-at="2020-05-13T16:34:52Z" finished-at="2020-05-13T16:36:28Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at DN_GUI.DB_withdrawal_validation.compareDB(DB_withdrawal_validation.java:142)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="195922" started-at="2020-07-23T15:15:55Z" finished-at="2020-07-23T15:19:10Z">
+      <class name="fis.TXNACT.TXNACT_DN">
+        <test-method status="PASS" signature="loginDN()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="loginDN" is-config="true" duration-ms="85220" started-at="2020-07-23T20:45:55Z" finished-at="2020-07-23T20:47:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareDB -->
-      </class> <!-- DN_GUI.DB_withdrawal_validation -->
+        </test-method> <!-- loginDN -->
+        <test-method status="PASS" signature="readContentTXNACT()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="readContentTXNACT" duration-ms="110604" started-at="2020-07-23T20:47:20Z" finished-at="2020-07-23T20:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readContentTXNACT -->
+        <test-method status="PASS" signature="dnLogoff()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="dnLogoff" is-config="true" duration-ms="0" started-at="2020-07-23T20:49:10Z" finished-at="2020-07-23T20:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dnLogoff -->
+      </class> <!-- fis.TXNACT.TXNACT_DN -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
