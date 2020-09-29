@@ -118,23 +118,13 @@ public class DnInspection extends DriverInstance{
 			DriverInstance.getdriver();//to use driver
 
 
-			/*ChromeOptions options = new ChromeOptions();
-			//options.setPageLoadStrategy(PageLoadStrategy.NONE);
-
-			options.addArguments("start-maximized"); // open Browser in maximized mode
-			options.addArguments("disable-infobars"); // disabling infobars
-			options.addArguments("--disable-extensions"); // disabling extensions
-			options.addArguments("--disable-gpu"); // applicable to windows os only
-			options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-			options.addArguments("--no-sandbox"); // Bypass OS security model
-
-			 driver = new ChromeDriver(options);*/
+			
 
 
 			driver.get(appurl);
 			driver.manage().window().maximize();
-			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+			
 			// Login DN
 
 			WebElement UserID = driver.findElement(By.name("userId"));
@@ -256,10 +246,7 @@ public class DnInspection extends DriverInstance{
 			WebElement Search = driver.findElement(By.id("search1"));
 			Search.click();
 			
-			Thread.sleep(2000);
-
-			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+			
 			//Screenshot for Transaction resultset 
 			/*Robot robot2=new Robot();
 			Dimension screensize2=Toolkit.getDefaultToolkit().getScreenSize();
@@ -278,8 +265,7 @@ public class DnInspection extends DriverInstance{
 			
 			
 
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-
+			
 			
 			//To get the selected transaction in detail
 			
@@ -299,7 +285,7 @@ public class DnInspection extends DriverInstance{
 
 			//****************************TRANSACTION DETAIL TAB******************************************************************
 
-			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			
 
 			/*//Screenshot for Transaction Tab 
 			Robot robot3=new Robot();
@@ -1708,6 +1694,13 @@ public class DnInspection extends DriverInstance{
 		searchTransaction();
 
 	}*/
+	
+	
+	
+	
+	
+	
+	
 
 
 }

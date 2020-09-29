@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="148478" started-at="2020-07-23T17:00:46Z" finished-at="2020-07-23T17:03:14Z">
+  <suite name="Default suite" duration-ms="444057" started-at="2020-08-10T10:14:58Z" finished-at="2020-08-10T10:22:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="148478" started-at="2020-07-23T17:00:46Z" finished-at="2020-07-23T17:03:14Z">
+    <test name="Default test" duration-ms="444057" started-at="2020-08-10T10:14:58Z" finished-at="2020-08-10T10:22:22Z">
       <class name="fis.TXNACT.TXNACT_DN">
-        <test-method status="PASS" signature="loginDN()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="loginDN" is-config="true" duration-ms="65579" started-at="2020-07-23T22:30:46Z" finished-at="2020-07-23T22:31:51Z">
+        <test-method status="PASS" signature="loginDN()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="loginDN" is-config="true" duration-ms="73271" started-at="2020-08-10T15:44:58Z" finished-at="2020-08-10T15:46:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDN -->
-        <test-method status="PASS" signature="readContentTXNACT()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="readContentTXNACT" duration-ms="82828" started-at="2020-07-23T22:31:51Z" finished-at="2020-07-23T22:33:14Z">
+        <test-method status="PASS" signature="readContentTXNACT()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="readContentTXNACT" duration-ms="370738" started-at="2020-08-10T15:46:12Z" finished-at="2020-08-10T15:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readContentTXNACT -->
-        <test-method status="PASS" signature="dnLogoff()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="dnLogoff" is-config="true" duration-ms="2" started-at="2020-07-23T22:33:14Z" finished-at="2020-07-23T22:33:14Z">
+        <test-method status="PASS" signature="dnLogoff()[pri:0, instance:fis.TXNACT.TXNACT_DN@6e8dacdf]" name="dnLogoff" is-config="true" duration-ms="0" started-at="2020-08-10T15:52:22Z" finished-at="2020-08-10T15:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dnLogoff -->

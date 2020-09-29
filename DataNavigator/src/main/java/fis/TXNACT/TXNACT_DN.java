@@ -11,6 +11,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.LineNumberReader;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -110,17 +111,20 @@ public class TXNACT_DN extends DriverInstance{
 	{
 
 		try {
-
+			
+		
 
 			FileReader fileReader=new FileReader("C:\\vinoth\\vinoth-Automation\\FIS_DataNavigator\\TXNACT_ATM_vino_sample.txt");
+		
 			BufferedReader bufferedReader=new BufferedReader(fileReader);
-
+			
+		
 			String currentline;
 			while((currentline=bufferedReader.readLine())!=null ) {
-
-
-
+		
 				String[] data=currentline.split(",");
+				
+				
 
 				if((data[0].contains("FH")) || (data[0].contains("FT")))
 				{	
@@ -438,8 +442,10 @@ public class TXNACT_DN extends DriverInstance{
 
 				//Inputs
 				String DnDate=outputFormat.format(date);// Date
-				String acquirerDN=txnactPojo.getINST_ID_ACQ();//Acquirer		
-				String refnumDN=txnactPojo.getREF_NO();//reference no
+				String acquirerDN=txnactPojo.getINST_ID_RECON_ACQ();//Acquirer	
+				System.out.println(acquirerDN);
+				String refnumDN=txnactPojo.getRETRIEVAL_REF_NO();//reference no
+				System.out.println(refnumDN);
 
 
 				// Navigating to Transaction Search Page
@@ -486,14 +492,15 @@ public class TXNACT_DN extends DriverInstance{
 
 				TXNACT_Validation txnact_Validation=new TXNACT_Validation(txnactPojo);
 				System.out.println("****************DN & TXNACT Validation**************");
-				txnact_Validation.txnact_validation();
-
-
+				txnact_Validation.txnact_validation(refnumDN+"_"+acquirerDN+"_"+"TXNACTfilevalidation.html");
+      
 
 			}
 
-
-		} catch (Exception e) {
+			bufferedReader.close();
+		} 
+		
+		catch (Exception e) {
 			// TODO: handle exception
 
 			e.printStackTrace();

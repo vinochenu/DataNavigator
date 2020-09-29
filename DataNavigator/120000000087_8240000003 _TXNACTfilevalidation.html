@@ -1,0 +1,4417 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Aug 10, 2020 03:52:22 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='41.237%'><span class='strong'>40</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='58.763%'>57</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='98'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAN between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PAN is  5598885999150015              &  DN PAN  is 423456******3234
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PAN between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='99'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TRAN_TYPE_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TRAN_TYPE_ID is  6100152000  &  DN TRAN_TYPE_ID  is 0020002000-Purchase From CHK
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TRAN_TYPE_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='100'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SYS_TRACE_AUDIT_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SYS_TRACE_AUDIT_NO is  010029        &  DN SYS_TRACE_AUDIT_NO  is 654321
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SYS_TRACE_AUDIT_NO between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='101'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TSTAMP_LOCAL between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TSTAMP_LOCAL is  20191218100446  &  DN TSTAMP_LOCAL  is 04/10/2020 00:23:19
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TSTAMP_LOCAL between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='102'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FUNC_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT FUNC_CODE is  200  &  DN FUNC_CODE  is 200
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						FUNC_CODE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='103'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RETRIEVAL_REF_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT RETRIEVAL_REF_NO is  120000000087  &  DN RETRIEVAL_REF_NO  is 120000000087
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						RETRIEVAL_REF_NO between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='104'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify APPROVAL_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT APPROVAL_CODE is          &  DN APPROVAL_CODE  is 722323
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						APPROVAL_CODE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='105'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ACT_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ACT_CODE is  114   &  DN ACT_CODE  is 000-Approved
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ACT_CODE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='106'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify INST_ID_ISS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT INST_ID_ISS is  8240000001   &  DN INST_ID_ISS  is 8818000015
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						INST_ID_ISS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='107'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify INST_ID_ACQ between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT INST_ID_ACQ is  8240000010   &  DN INST_ID_ACQ  is 8240000003
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						INST_ID_ACQ between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='108'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify INST_ID_RECON_ISS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT INST_ID_RECON_ISS is  8818000012   &  DN INST_ID_RECON_ISS  is 8818000015
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						INST_ID_RECON_ISS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='109'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify AUTH_BY between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT AUTH_BY is  O  &  DN AUTH_BY  is Connex/Advantage Network Process
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						AUTH_BY between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='110'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TRAN_CLASS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TRAN_CLASS is  01   &  DN TRAN_CLASS  is 00
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TRAN_CLASS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='111'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PROC_ID_ACQ between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PROC_ID_ACQ is  BBLB24    &  DN PROC_ID_ACQ  is BBLB24
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PROC_ID_ACQ between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='112'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PROC_ID_ISS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PROC_ID_ISS is  BBLBCIS   &  DN PROC_ID_ISS  is CH24
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PROC_ID_ISS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='113'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify DATE_RECON_ACQ between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT DATE_RECON_ACQ is  12/18/2019  &  DN DATE_RECON_ACQ  is 04/10/2020
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						DATE_RECON_ACQ between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='114'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify DATE_RECON_ISS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT DATE_RECON_ISS is  12/18/2019  &  DN DATE_RECON_ISS  is 04/10/2020
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						DATE_RECON_ISS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='115'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify AMT_RECON_NET between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT AMT_RECON_NET is  000000000000000000  &  DN AMT_RECON_NET  is THB 168.05
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						AMT_RECON_NET between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='116'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CUR_RECON_NET between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT CUR_RECON_NET is  764  &  DN CUR_RECON_NET  is 764
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						CUR_RECON_NET between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='117'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CARD_ACPT_TERM_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT CARD_ACPT_TERM_ID is  S262B101A032      &  DN CARD_ACPT_TERM_ID  is 1234567890123456
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						CARD_ACPT_TERM_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='118'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify NET_TERM_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT NET_TERM_ID is  S262B101  &  DN NET_TERM_ID  is Z0000046
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						NET_TERM_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='119'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ACCT_ID_1 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ACCT_ID_1 is  1620378289                    &  DN ACCT_ID_1  is 2345667899
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ACCT_ID_1 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='120'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify MERCH_TYPE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+6ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT MERCH_TYPE is  6011  &  DN MERCH_TYPE  is 6514
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						MERCH_TYPE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						Transaction Details Tab Validation
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='121'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_PROXY_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT RECV_PROXY_ID is                                                                                                                                    &  DN RECV_PROXY_ID  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						RECV_PROXY_ID between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='122'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_PROXY_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SENDER_PROXY_ID is                                                                                                                                    &  DN SENDER_PROXY_ID  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SENDER_PROXY_ID between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='123'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_PROXY_TYPE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT RECV_PROXY_TYPE is                &  DN RECV_PROXY_TYPE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						RECV_PROXY_TYPE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='124'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_PROXY_TYPE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SENDER_PROXY_TYPE is                &  DN SENDER_PROXY_TYPE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SENDER_PROXY_TYPE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='125'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_TAX_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SENDER_TAX_ID is                       &  DN SENDER_TAX_ID  is 9876543210987654321
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SENDER_TAX_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='126'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_TAX_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT RECV_TAX_ID is                       &  DN RECV_TAX_ID  is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						RECV_TAX_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='127'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify VAT_RATE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT VAT_RATE is        &  DN VAT_RATE  is 0000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						VAT_RATE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='128'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify VAT between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT VAT is                &  DN VAT  is 000000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						VAT between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='129'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify WHT_TAX_RATE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT WHT_TAX_RATE is        &  DN WHT_TAX_RATE  is 0000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						WHT_TAX_RATE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='130'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify WHT_TAX between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT WHT_TAX is                &  DN WHT_TAX  is 000000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						WHT_TAX between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='131'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify WHT_TAX_COND between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT WHT_TAX_COND is     &  DN WHT_TAX_COND  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						WHT_TAX_COND between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='132'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_REF_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SENDER_REF_NO is                        &  DN SENDER_REF_NO  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SENDER_REF_NO between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='133'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TRAN_REF_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TRAN_REF_NO is                    &  DN TRAN_REF_NO  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TRAN_REF_NO between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='134'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify REF_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT REF_NO is                                                      &  DN REF_NO  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						REF_NO between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='135'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_REF_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BBL_REF_NO is                             &  DN BBL_REF_NO  is 1234567890123456789012345
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BBL_REF_NO between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='136'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FROM_ACCT_NAME between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT FROM_ACCT_NAME is                                                      &  DN FROM_ACCT_NAME  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						FROM_ACCT_NAME between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='137'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TO_ACCT_NAME between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TO_ACCT_NAME is                                                      &  DN TO_ACCT_NAME  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TO_ACCT_NAME between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='138'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TO_ACCT_DISP_NAME between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TO_ACCT_DISP_NAME is                                                      &  DN TO_ACCT_DISP_NAME  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TO_ACCT_DISP_NAME between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='139'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_FILLER_1 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BBL_FILLER_1 is                                          | |         &  DN BBL_FILLER_1  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BBL_FILLER_1 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='140'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_FILLER_2 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BBL_FILLER_2 is      |               |EN|      |                     &  DN BBL_FILLER_2  is BBL*BBL_FILLER2*BBL*BBL_FILLER2*BBL*BBL_FILLER2*BB
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BBL_FILLER_2 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='141'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TAX_INVOICE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TAX_INVOICE is                                                      &  DN TAX_INVOICE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TAX_INVOICE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='142'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TYPE_OF_INCOME between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TYPE_OF_INCOME is       &  DN TYPE_OF_INCOME  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TYPE_OF_INCOME between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='143'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify EDC_NUMBER between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT EDC_NUMBER is            &  DN EDC_NUMBER  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						EDC_NUMBER between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='144'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TSTAMP_TRANS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TSTAMP_TRANS is  2020041010044619  &  DN TSTAMP_TRANS  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TSTAMP_TRANS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='145'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BILL_REFERENCE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BILL_REFERENCE is                      |                    |                      &  DN BILL_REFERENCE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BILL_REFERENCE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='146'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BPDUE_RTPEXP_DATE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BPDUE_RTPEXP_DATE is                    &  DN BPDUE_RTPEXP_DATE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BPDUE_RTPEXP_DATE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='147'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CREDIT_NOTIF_REF between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT CREDIT_NOTIF_REF is                    &  DN CREDIT_NOTIF_REF  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						CREDIT_NOTIF_REF between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='148'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BP_URL between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BP_URL is                                                                                                        &  DN BP_URL  is www.billpay.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BP_URL between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='149'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_COMP_TAX_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SENDER_COMP_TAX_ID is                       &  DN SENDER_COMP_TAX_ID  is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SENDER_COMP_TAX_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='150'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SENDER_COMP_ACCT_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SENDER_COMP_ACCT_NO is                       &  DN SENDER_COMP_ACCT_NO  is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SENDER_COMP_ACCT_NO between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='151'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_COMP_TAX_ID between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT RECV_COMP_TAX_ID is                       &  DN RECV_COMP_TAX_ID  is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						RECV_COMP_TAX_ID between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='152'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify RECV_COMP_ACCT_NO between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT RECV_COMP_ACCT_NO is                       &  DN RECV_COMP_ACCT_NO  is 1234567890123456789
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						RECV_COMP_ACCT_NO between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='153'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify COMPANY_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT COMPANY_CODE is           &  DN COMPANY_CODE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						COMPANY_CODE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='154'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SERVICE_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SERVICE_CODE is                &  DN SERVICE_CODE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SERVICE_CODE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='155'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FLAGS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT FLAGS is    2                               0                 &  DN FLAGS  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						FLAGS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='156'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BILL_REFERENCE2 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BILL_REFERENCE2 is                                             &  DN BILL_REFERENCE2  is BBL*REF_2*BBL*REF_2*BBL*REF_2*BBL*REF_2*B
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BILL_REFERENCE2 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='157'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_1 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT USER_DATA_1 is                             &  DN USER_DATA_1  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						USER_DATA_1 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='158'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_2 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT USER_DATA_2 is                             &  DN USER_DATA_2  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						USER_DATA_2 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='159'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_3 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT USER_DATA_3 is                             &  DN USER_DATA_3  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						USER_DATA_3 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='160'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_4 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT USER_DATA_4 is                             &  DN USER_DATA_4  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						USER_DATA_4 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='161'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify USER_DATA_5 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT USER_DATA_5 is                             &  DN USER_DATA_5  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						USER_DATA_5 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='162'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYMENT_1 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PAYMENT_1 is                        &  DN PAYMENT_1  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PAYMENT_1 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='163'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYMENT_2 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PAYMENT_2 is                        &  DN PAYMENT_2  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PAYMENT_2 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='164'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYMENT_3 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PAYMENT_3 is                        &  DN PAYMENT_3  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PAYMENT_3 between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='165'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SMS_FEE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SMS_FEE is          &  DN SMS_FEE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SMS_FEE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='166'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SMS_MOBILE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SMS_MOBILE is  0636178879       &  DN SMS_MOBILE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SMS_MOBILE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='167'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify OTP between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT OTP is  00000000006|51216550   &  DN OTP  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						OTP between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='168'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ACCT_INFO_1 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ACCT_INFO_1 is                                                                                                            &  DN ACCT_INFO_1  is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ACCT_INFO_1 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='169'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ACCT_INFO_2 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ACCT_INFO_2 is                                                                                                            &  DN ACCT_INFO_2  is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ACCT_INFO_2 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='170'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_FILLER_3 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BBL_FILLER_3 is                           |  |               |    |      |  |  |  |      |                |            |                    &  DN BBL_FILLER_3  is BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_FILLER3*BBL*BBL_F
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BBL_FILLER_3 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='171'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FRM_FUND_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT FRM_FUND_CODE is                   &  DN FRM_FUND_CODE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						FRM_FUND_CODE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='172'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TO_FUND_CODE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TO_FUND_CODE is                   &  DN TO_FUND_CODE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TO_FUND_CODE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='173'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify UNIT between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT UNIT is                 |                 &  DN UNIT  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						UNIT between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='174'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify UNIT_PRICE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT UNIT_PRICE is               &  DN UNIT_PRICE  is 00000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						UNIT_PRICE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='175'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BOND_YIELD between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BOND_YIELD is          &  DN BOND_YIELD  is Yield
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BOND_YIELD between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='176'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify SURCHARGE_FEE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT SURCHARGE_FEE is                 &  DN SURCHARGE_FEE  is 0000000000000
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						SURCHARGE_FEE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='177'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify EXT_FROM_ACCT_TYPE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT EXT_FROM_ACCT_TYPE is  00  &  DN EXT_FROM_ACCT_TYPE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						EXT_FROM_ACCT_TYPE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='178'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify EXT_TO_ACCT_TYPE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT EXT_TO_ACCT_TYPE is  15  &  DN EXT_TO_ACCT_TYPE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						EXT_TO_ACCT_TYPE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='179'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify FROM_ACCT_DISP_NAME between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT FROM_ACCT_DISP_NAME is                                                      &  DN FROM_ACCT_DISP_NAME  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						FROM_ACCT_DISP_NAME between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='180'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TERMINAL_TRACE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TERMINAL_TRACE is  0000010029  &  DN TERMINAL_TRACE  is 0000654321
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TERMINAL_TRACE between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='181'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify QRC_VOUCHER between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT QRC_VOUCHER is                        &  DN QRC_VOUCHER  is QRCVoucher1234567890
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						QRC_VOUCHER between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='182'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_FILLER_4 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BBL_FILLER_4 is                 |                   |                    |                    |                    |               |        &  DN BBL_FILLER_4  is BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_FILLER4*BBL*BBL_F
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BBL_FILLER_4 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='183'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify CDM_DATA between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT CDM_DATA is                                                                                                        &  DN CDM_DATA  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						CDM_DATA between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='184'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify BBL_FILLER_5 between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT BBL_FILLER_5 is            |   |220|-30|   |      |      |      |  |   |  |00 |  |                                                          &  DN BBL_FILLER_5  is BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*BBL*ACC_INFO_1*
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						BBL_FILLER_5 between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='185'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify STANDIN_ACT between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT STANDIN_ACT is  O  &  DN STANDIN_ACT  is N
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						STANDIN_ACT between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='186'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify REF_DATA_ACQ between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT REF_DATA_ACQ is                                                                                                       &  DN REF_DATA_ACQ  is 0
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						REF_DATA_ACQ between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='187'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ADL_DATA_PRIV_ACQ between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ADL_DATA_PRIV_ACQ is                                                                                                                                                                                                                                                                   &  DN ADL_DATA_PRIV_ACQ  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ADL_DATA_PRIV_ACQ between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='188'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify REF_DATA_ISS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT REF_DATA_ISS is                                                                                                       &  DN REF_DATA_ISS  is 0
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						REF_DATA_ISS between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='189'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ADL_DATA_PRIV_ISS between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ADL_DATA_PRIV_ISS is                                                                                                                                                                                                                                                                   &  DN ADL_DATA_PRIV_ISS  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ADL_DATA_PRIV_ISS between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='190'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify ADL_RESP_DATA between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT ADL_RESP_DATA is                                                                                                       &  DN ADL_RESP_DATA  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						ADL_RESP_DATA between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='191'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TRACK_2_DATA between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TRACK_2_DATA is                                            &  DN TRACK_2_DATA  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TRACK_2_DATA between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='192'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TRAN_UNIQUE_DATA between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TRAN_UNIQUE_DATA is                                                      &  DN TRAN_UNIQUE_DATA  is OA
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TRAN_UNIQUE_DATA between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='193'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify TRAN_DESC between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT TRAN_DESC is  N21BBDC                                          05|00|                                               &  DN TRAN_DESC  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TRAN_DESC between TXNACT file  & DN Application are not matched & hence Testcase got failed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='194'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify PAYEE between TXNACT file  & DN Application</span>
+						<span class='test-time'>Aug 10, 2020 03:52:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label end-time'>Aug 10, 2020 03:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						TXN ACT PAYEE is                             &  DN PAYEE  is
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>3:52:22 PM</td>
+				<td class='step-details'>
+						PAYEE between TXNACT file  & DN Application are matched & hence Testcase got Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>97</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Aug 10, 2020 03:52:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Aug 10, 2020 03:52:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 0s+38ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 97,
+				passParent: 40,
+				failParent: 57,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 57,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Verify PAN between TXNACT file  & DN Application":0,"Verify TRAN_TYPE_ID between TXNACT file  & DN Application":0,"Verify SYS_TRACE_AUDIT_NO between TXNACT file  & DN Application":0,"Verify TSTAMP_LOCAL between TXNACT file  & DN Application":0,"Verify FUNC_CODE between TXNACT file  & DN Application":0,"Verify RETRIEVAL_REF_NO between TXNACT file  & DN Application":0,"Verify APPROVAL_CODE between TXNACT file  & DN Application":0,"Verify ACT_CODE between TXNACT file  & DN Application":0,"Verify INST_ID_ISS between TXNACT file  & DN Application":0,"Verify INST_ID_ACQ between TXNACT file  & DN Application":0,"Verify INST_ID_RECON_ISS between TXNACT file  & DN Application":0,"Verify AUTH_BY between TXNACT file  & DN Application":0,"Verify TRAN_CLASS between TXNACT file  & DN Application":0,"Verify PROC_ID_ACQ between TXNACT file  & DN Application":0,"Verify PROC_ID_ISS between TXNACT file  & DN Application":0,"Verify DATE_RECON_ACQ between TXNACT file  & DN Application":0,"Verify DATE_RECON_ISS between TXNACT file  & DN Application":0,"Verify AMT_RECON_NET between TXNACT file  & DN Application":0,"Verify CUR_RECON_NET between TXNACT file  & DN Application":0,"Verify CARD_ACPT_TERM_ID between TXNACT file  & DN Application":0,"Verify NET_TERM_ID between TXNACT file  & DN Application":0,"Verify ACCT_ID_1 between TXNACT file  & DN Application":0,"Verify MERCH_TYPE between TXNACT file  & DN Application":0.006,"Verify RECV_PROXY_ID between TXNACT file  & DN Application":0,"Verify SENDER_PROXY_ID between TXNACT file  & DN Application":0,"Verify RECV_PROXY_TYPE between TXNACT file  & DN Application":0,"Verify SENDER_PROXY_TYPE between TXNACT file  & DN Application":0,"Verify SENDER_TAX_ID between TXNACT file  & DN Application":0,"Verify RECV_TAX_ID between TXNACT file  & DN Application":0,"Verify VAT_RATE between TXNACT file  & DN Application":0,"Verify VAT between TXNACT file  & DN Application":0,"Verify WHT_TAX_RATE between TXNACT file  & DN Application":0,"Verify WHT_TAX between TXNACT file  & DN Application":0,"Verify WHT_TAX_COND between TXNACT file  & DN Application":0,"Verify SENDER_REF_NO between TXNACT file  & DN Application":0,"Verify TRAN_REF_NO between TXNACT file  & DN Application":0,"Verify REF_NO between TXNACT file  & DN Application":0,"Verify BBL_REF_NO between TXNACT file  & DN Application":0,"Verify FROM_ACCT_NAME between TXNACT file  & DN Application":0,"Verify TO_ACCT_NAME between TXNACT file  & DN Application":0,"Verify TO_ACCT_DISP_NAME between TXNACT file  & DN Application":0,"Verify BBL_FILLER_1 between TXNACT file  & DN Application":0,"Verify BBL_FILLER_2 between TXNACT file  & DN Application":0,"Verify TAX_INVOICE between TXNACT file  & DN Application":0,"Verify TYPE_OF_INCOME between TXNACT file  & DN Application":0,"Verify EDC_NUMBER between TXNACT file  & DN Application":0,"Verify TSTAMP_TRANS between TXNACT file  & DN Application":0,"Verify BILL_REFERENCE between TXNACT file  & DN Application":0,"Verify BPDUE_RTPEXP_DATE between TXNACT file  & DN Application":0,"Verify CREDIT_NOTIF_REF between TXNACT file  & DN Application":0,"Verify BP_URL between TXNACT file  & DN Application":0,"Verify SENDER_COMP_TAX_ID between TXNACT file  & DN Application":0,"Verify SENDER_COMP_ACCT_NO between TXNACT file  & DN Application":0,"Verify RECV_COMP_TAX_ID between TXNACT file  & DN Application":0,"Verify RECV_COMP_ACCT_NO between TXNACT file  & DN Application":0,"Verify COMPANY_CODE between TXNACT file  & DN Application":0,"Verify SERVICE_CODE between TXNACT file  & DN Application":0,"Verify FLAGS between TXNACT file  & DN Application":0,"Verify BILL_REFERENCE2 between TXNACT file  & DN Application":0,"Verify USER_DATA_1 between TXNACT file  & DN Application":0,"Verify USER_DATA_2 between TXNACT file  & DN Application":0,"Verify USER_DATA_3 between TXNACT file  & DN Application":0,"Verify USER_DATA_4 between TXNACT file  & DN Application":0,"Verify USER_DATA_5 between TXNACT file  & DN Application":0,"Verify PAYMENT_1 between TXNACT file  & DN Application":0,"Verify PAYMENT_2 between TXNACT file  & DN Application":0,"Verify PAYMENT_3 between TXNACT file  & DN Application":0,"Verify SMS_FEE between TXNACT file  & DN Application":0,"Verify SMS_MOBILE between TXNACT file  & DN Application":0,"Verify OTP between TXNACT file  & DN Application":0,"Verify ACCT_INFO_1 between TXNACT file  & DN Application":0,"Verify ACCT_INFO_2 between TXNACT file  & DN Application":0,"Verify BBL_FILLER_3 between TXNACT file  & DN Application":0,"Verify FRM_FUND_CODE between TXNACT file  & DN Application":0,"Verify TO_FUND_CODE between TXNACT file  & DN Application":0,"Verify UNIT between TXNACT file  & DN Application":0,"Verify UNIT_PRICE between TXNACT file  & DN Application":0,"Verify BOND_YIELD between TXNACT file  & DN Application":0,"Verify SURCHARGE_FEE between TXNACT file  & DN Application":0,"Verify EXT_FROM_ACCT_TYPE between TXNACT file  & DN Application":0,"Verify EXT_TO_ACCT_TYPE between TXNACT file  & DN Application":0,"Verify FROM_ACCT_DISP_NAME between TXNACT file  & DN Application":0,"Verify TERMINAL_TRACE between TXNACT file  & DN Application":0,"Verify QRC_VOUCHER between TXNACT file  & DN Application":0,"Verify BBL_FILLER_4 between TXNACT file  & DN Application":0,"Verify CDM_DATA between TXNACT file  & DN Application":0,"Verify BBL_FILLER_5 between TXNACT file  & DN Application":0,"Verify STANDIN_ACT between TXNACT file  & DN Application":0,"Verify REF_DATA_ACQ between TXNACT file  & DN Application":0,"Verify ADL_DATA_PRIV_ACQ between TXNACT file  & DN Application":0,"Verify REF_DATA_ISS between TXNACT file  & DN Application":0,"Verify ADL_DATA_PRIV_ISS between TXNACT file  & DN Application":0,"Verify ADL_RESP_DATA between TXNACT file  & DN Application":0,"Verify TRACK_2_DATA between TXNACT file  & DN Application":0,"Verify TRAN_UNIQUE_DATA between TXNACT file  & DN Application":0,"Verify TRAN_DESC between TXNACT file  & DN Application":0,"Verify PAYEE between TXNACT file  & DN Application":0
+			};
+		</script>
+	
+		  <script src='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

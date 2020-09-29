@@ -560,199 +560,212 @@ public void additionalTabPageDN() {
 	System.out.println("uTA_AVSResult is "+transDnPojo.getUTA_AVSResult());
 	
 	
-	//F1-> Fee 1 Information
-	
-	String f1_ACQ_ReconAmount=F1_ACQ_ReconAmount.getText();
-
-	transDnPojo.setF1_ACQ_ReconAmount(f1_ACQ_ReconAmount);;
-	System.out.println("f1_ACQ_ReconCurrency is "+transDnPojo.getF1_ACQ_ReconAmount());
-	
-	String f1_ACQ_ReconCurrency=F1_ACQ_ReconCurrency.getText();
-
-	transDnPojo.setF1_ACQ_ReconCurrency(f1_ACQ_ReconCurrency);;
-	System.out.println("f1_ACQ_ReconCurrency is "+transDnPojo.getF1_ACQ_ReconCurrency());
-	
-	String f1_ACQ_ConversionRate=F1_ACQ_ConversionRate.getText();
-
-	transDnPojo.setF1_ACQ_ConversionRate(f1_ACQ_ConversionRate);;
-	System.out.println("f1_ACQ_ConversionRate is "+transDnPojo.getF1_ACQ_ConversionRate());
-	
-	String f1_ISS_ReconAmount=F1_ISS_ReconAmount.getText();
-
-	transDnPojo.setF1_ISS_ReconAmount(f1_ISS_ReconAmount);;
-	System.out.println("f1_ISS_ReconAmount is "+transDnPojo.getF1_ISS_ReconAmount());
-	
-	String f1_ISS_ReconCurrency=F1_ISS_ReconCurrency.getText();
-
-	transDnPojo.setF1_ISS_ReconCurrency(f1_ISS_ReconCurrency);
-	System.out.println("f1_ISS_ReconCurrency is "+transDnPojo.getF1_ISS_ReconCurrency());
-	
-
-	String f1_ISS_ConversionRate=F1_ISS_ConversionRate.getText();
-
-	transDnPojo.setF1_ISS_ConversionRate(f1_ISS_ConversionRate);
-	System.out.println("f1_ISS_ConversionRate is "+transDnPojo.getF1_ISS_ConversionRate());
 	
 	
-	String f1_Amount=F1_Amount.getText();
+	try {
+		
+		//F1-> Fee 1 Information
+		
+		String f1_ACQ_ReconAmount=F1_ACQ_ReconAmount.getText();
 
-	transDnPojo.setF1_Amount(f1_Amount);
-	System.out.println("f1_Amount is "+transDnPojo.getF1_Amount());
+		transDnPojo.setF1_ACQ_ReconAmount(f1_ACQ_ReconAmount);;
+		System.out.println("f1_ACQ_ReconCurrency is "+transDnPojo.getF1_ACQ_ReconAmount());
+		
+		String f1_ACQ_ReconCurrency=F1_ACQ_ReconCurrency.getText();
+
+		transDnPojo.setF1_ACQ_ReconCurrency(f1_ACQ_ReconCurrency);;
+		System.out.println("f1_ACQ_ReconCurrency is "+transDnPojo.getF1_ACQ_ReconCurrency());
+		
+		String f1_ACQ_ConversionRate=F1_ACQ_ConversionRate.getText();
+
+		transDnPojo.setF1_ACQ_ConversionRate(f1_ACQ_ConversionRate);;
+		System.out.println("f1_ACQ_ConversionRate is "+transDnPojo.getF1_ACQ_ConversionRate());
+		
+		String f1_ISS_ReconAmount=F1_ISS_ReconAmount.getText();
+
+		transDnPojo.setF1_ISS_ReconAmount(f1_ISS_ReconAmount);;
+		System.out.println("f1_ISS_ReconAmount is "+transDnPojo.getF1_ISS_ReconAmount());
+		
+		String f1_ISS_ReconCurrency=F1_ISS_ReconCurrency.getText();
+
+		transDnPojo.setF1_ISS_ReconCurrency(f1_ISS_ReconCurrency);
+		System.out.println("f1_ISS_ReconCurrency is "+transDnPojo.getF1_ISS_ReconCurrency());
+		
+
+		String f1_ISS_ConversionRate=F1_ISS_ConversionRate.getText();
+
+		transDnPojo.setF1_ISS_ConversionRate(f1_ISS_ConversionRate);
+		System.out.println("f1_ISS_ConversionRate is "+transDnPojo.getF1_ISS_ConversionRate());
+		
+		
+		String f1_Amount=F1_Amount.getText();
+
+		transDnPojo.setF1_Amount(f1_Amount);
+		System.out.println("f1_Amount is "+transDnPojo.getF1_Amount());
+		
+		String f1_Currency=F1_Currency.getText();
+
+		transDnPojo.setF1_Currency(f1_Currency);;
+		System.out.println("f1_Currency is "+transDnPojo.getF1_Currency());
+		
+		String f1_Type=F1_Type.getText();
+
+		transDnPojo.setF1_Type(f1_Type);
+		System.out.println("f1_Type is "+transDnPojo.getF1_Type());
+		
+		String f1_Indicator=F1_Indicator.getText();
+
+		transDnPojo.setF1_Indicator(f1_Indicator);
+		System.out.println("f1_Indicator is "+transDnPojo.getF1_Indicator());
+		
+		String f1_Memo=F1_Memo.getText();
+
+		transDnPojo.setF1_Memo(f1_Memo);
+		System.out.println("f1_Memo is "+transDnPojo.getF1_Memo());
+		
+		String f1_NetworkReconAmount=F1_NetworkReconAmount.getText();
+
+		transDnPojo.setF1_NetworkReconAmount(f1_NetworkReconAmount);
+		System.out.println("f1_NetworkReconAmount is "+transDnPojo.getF1_NetworkReconAmount());
+		
+
+		//F2-> Fee 2 Information
+
+	String f2_ACQ_ReconAmount=F2_ACQ_ReconAmount.getText();
+
+	transDnPojo.setF2_ACQ_ReconAmount(f2_ACQ_ReconAmount);;
+	System.out.println("f2_ACQ_ReconAmount is "+transDnPojo.getF2_ACQ_ReconAmount());
+
+	String f2_ACQ_ReconCurrency=F2_ACQ_ReconCurrency.getText();
+
+	transDnPojo.setF2_ACQ_ReconCurrency(f2_ACQ_ReconCurrency);;
+	System.out.println("f2_ACQ_ReconCurrency is "+transDnPojo.getF2_ACQ_ReconCurrency());
+
+	String f2_ACQ_ConversionRate=F2_ACQ_ConversionRate.getText();
+
+	transDnPojo.setF2_ACQ_ConversionRate(f2_ACQ_ConversionRate);;
+	System.out.println("f2_ACQ_ConversionRate is "+transDnPojo.getF2_ACQ_ConversionRate());
+
+	String f2_ISS_ReconAmount=F2_ISS_ReconAmount.getText();
+
+	transDnPojo.setF2_ISS_ReconAmount(f2_ISS_ReconAmount);;
+	System.out.println("f2_ISS_ReconAmount is "+transDnPojo.getF2_ISS_ReconAmount());
+
+	String f2_ISS_ReconCurrency=F2_ISS_ReconCurrency.getText();
+
+	transDnPojo.setF2_ISS_ReconCurrency(f2_ISS_ReconCurrency);
+	System.out.println("f2_ISS_ReconCurrency is "+transDnPojo.getF2_ISS_ReconCurrency());
+
+
+	String f2_ISS_ConversionRate=F2_ISS_ConversionRate.getText();
+
+	transDnPojo.setF2_ISS_ConversionRate(f2_ISS_ConversionRate);
+	System.out.println("f2_ISS_ConversionRate is "+transDnPojo.getF2_ISS_ConversionRate());
+
+
+	String f2_Amount=F2_Amount.getText();
+
+	transDnPojo.setF2_Amount(f2_Amount);
+	System.out.println("f2_Amount is "+transDnPojo.getF2_Amount());
+
+	String f2_Currency=F2_Currency.getText();
+
+	transDnPojo.setF2_Currency(f2_Currency);;
+	System.out.println("f2_Currency is "+transDnPojo.getF2_Currency());
+
+	String f2_Type=F2_Type.getText();
+
+	transDnPojo.setF2_Type(f2_Type);
+	System.out.println("f2_Type is "+transDnPojo.getF2_Type());
+
+	String f2_Indicator=F2_Indicator.getText();
+
+	transDnPojo.setF2_Indicator(f2_Indicator);
+	System.out.println("f2_Indicator is "+transDnPojo.getF2_Indicator());
+
+	String f2_Memo=F2_Memo.getText();
+
+	transDnPojo.setF2_Memo(f2_Memo);
+	System.out.println("F2_Memo is "+transDnPojo.getF2_Memo());
+
+	String f2_NetworkReconAmount=F2_NetworkReconAmount.getText();
+
+	transDnPojo.setF2_NetworkReconAmount(f2_NetworkReconAmount);
+	System.out.println("F2_NetworkReconAmount is "+transDnPojo.getF2_NetworkReconAmount());
+
+
+	//F3-> Fee 3 Information
+
+	String f3_ACQ_ReconAmount=F3_ACQ_ReconAmount.getText();
+
+	transDnPojo.setF3_ACQ_ReconAmount(f3_ACQ_ReconAmount);;
+	System.out.println("f3_ACQ_ReconAmount is "+transDnPojo.getF3_ACQ_ReconAmount());
+
+	String f3_ACQ_ReconCurrency=F3_ACQ_ReconCurrency.getText();
+
+	transDnPojo.setF3_ACQ_ReconCurrency(f3_ACQ_ReconCurrency);;
+	System.out.println("f3_ACQ_ReconCurrency is "+transDnPojo.getF3_ACQ_ReconCurrency());
+
+	String f3_ACQ_ConversionRate=F3_ACQ_ConversionRate.getText();
+
+	transDnPojo.setF3_ACQ_ConversionRate(f3_ACQ_ConversionRate);;
+	System.out.println("f3_ACQ_ConversionRate is "+transDnPojo.getF3_ACQ_ConversionRate());
+
+	String f3_ISS_ReconAmount=F3_ISS_ReconAmount.getText();
+
+	transDnPojo.setF3_ISS_ReconAmount(f3_ISS_ReconAmount);;
+	System.out.println("f3_ISS_ReconAmount is "+transDnPojo.getF3_ISS_ReconAmount());
+
+	String f3_ISS_ReconCurrency=F3_ISS_ReconCurrency.getText();
+
+	transDnPojo.setF3_ISS_ReconCurrency(f3_ISS_ReconCurrency);
+	System.out.println("f3_ISS_ReconCurrency is "+transDnPojo.getF3_ISS_ReconCurrency());
+
+
+	String f3_ISS_ConversionRate=F3_ISS_ConversionRate.getText();
+
+	transDnPojo.setF3_ISS_ConversionRate(f3_ISS_ConversionRate);
+	System.out.println("f3_ISS_ConversionRate is "+transDnPojo.getF3_ISS_ConversionRate());
+
+
+	String f3_Amount=F3_Amount.getText();
+
+	transDnPojo.setF3_Amount(f3_Amount);
+	System.out.println("f3_Amount is "+transDnPojo.getF3_Amount());
+
+	String f3_Currency=F3_Currency.getText();
+
+	transDnPojo.setF3_Currency(f3_Currency);;
+	System.out.println("f3_Currency is "+transDnPojo.getF3_Currency());
+
+	String f3_Type=F3_Type.getText();
+
+	transDnPojo.setF3_Type(f3_Type);
+	System.out.println("f3_Type is "+transDnPojo.getF3_Type());
+
+	String f3_Indicator=F3_Indicator.getText();
+
+	transDnPojo.setF3_Indicator(f3_Indicator);
+	System.out.println("f3_Indicator is "+transDnPojo.getF3_Indicator());
+
+	String f3_Memo=F3_Memo.getText();
+
+	transDnPojo.setF3_Memo(f3_Memo);
+	System.out.println("F3_Memo is "+transDnPojo.getF3_Memo());
+
+	String f3_NetworkReconAmount=F3_NetworkReconAmount.getText();
+
+	transDnPojo.setF3_NetworkReconAmount(f3_NetworkReconAmount);
+	System.out.println("F3_NetworkReconAmount is "+transDnPojo.getF3_NetworkReconAmount());
+		
+	} catch (Exception e) {
+		
+		e.printStackTrace();
+		System.out.println("This Transaction is not having Fee 1 & fee2 & fee 3 info ");
+		// TODO: handle exception
+	}
 	
-	String f1_Currency=F1_Currency.getText();
-
-	transDnPojo.setF1_Currency(f1_Currency);;
-	System.out.println("f1_Currency is "+transDnPojo.getF1_Currency());
 	
-	String f1_Type=F1_Type.getText();
-
-	transDnPojo.setF1_Type(f1_Type);
-	System.out.println("f1_Type is "+transDnPojo.getF1_Type());
-	
-	String f1_Indicator=F1_Indicator.getText();
-
-	transDnPojo.setF1_Indicator(f1_Indicator);
-	System.out.println("f1_Indicator is "+transDnPojo.getF1_Indicator());
-	
-	String f1_Memo=F1_Memo.getText();
-
-	transDnPojo.setF1_Memo(f1_Memo);
-	System.out.println("f1_Memo is "+transDnPojo.getF1_Memo());
-	
-	String f1_NetworkReconAmount=F1_NetworkReconAmount.getText();
-
-	transDnPojo.setF1_NetworkReconAmount(f1_NetworkReconAmount);
-	System.out.println("f1_NetworkReconAmount is "+transDnPojo.getF1_NetworkReconAmount());
-	
-
-	//F2-> Fee 2 Information
-
-String f2_ACQ_ReconAmount=F2_ACQ_ReconAmount.getText();
-
-transDnPojo.setF2_ACQ_ReconAmount(f2_ACQ_ReconAmount);;
-System.out.println("f2_ACQ_ReconAmount is "+transDnPojo.getF2_ACQ_ReconAmount());
-
-String f2_ACQ_ReconCurrency=F2_ACQ_ReconCurrency.getText();
-
-transDnPojo.setF2_ACQ_ReconCurrency(f2_ACQ_ReconCurrency);;
-System.out.println("f2_ACQ_ReconCurrency is "+transDnPojo.getF2_ACQ_ReconCurrency());
-
-String f2_ACQ_ConversionRate=F2_ACQ_ConversionRate.getText();
-
-transDnPojo.setF2_ACQ_ConversionRate(f2_ACQ_ConversionRate);;
-System.out.println("f2_ACQ_ConversionRate is "+transDnPojo.getF2_ACQ_ConversionRate());
-
-String f2_ISS_ReconAmount=F2_ISS_ReconAmount.getText();
-
-transDnPojo.setF2_ISS_ReconAmount(f2_ISS_ReconAmount);;
-System.out.println("f2_ISS_ReconAmount is "+transDnPojo.getF2_ISS_ReconAmount());
-
-String f2_ISS_ReconCurrency=F2_ISS_ReconCurrency.getText();
-
-transDnPojo.setF2_ISS_ReconCurrency(f2_ISS_ReconCurrency);
-System.out.println("f2_ISS_ReconCurrency is "+transDnPojo.getF2_ISS_ReconCurrency());
-
-
-String f2_ISS_ConversionRate=F2_ISS_ConversionRate.getText();
-
-transDnPojo.setF2_ISS_ConversionRate(f2_ISS_ConversionRate);
-System.out.println("f2_ISS_ConversionRate is "+transDnPojo.getF2_ISS_ConversionRate());
-
-
-String f2_Amount=F2_Amount.getText();
-
-transDnPojo.setF2_Amount(f2_Amount);
-System.out.println("f2_Amount is "+transDnPojo.getF2_Amount());
-
-String f2_Currency=F2_Currency.getText();
-
-transDnPojo.setF2_Currency(f2_Currency);;
-System.out.println("f2_Currency is "+transDnPojo.getF2_Currency());
-
-String f2_Type=F2_Type.getText();
-
-transDnPojo.setF2_Type(f2_Type);
-System.out.println("f2_Type is "+transDnPojo.getF2_Type());
-
-String f2_Indicator=F2_Indicator.getText();
-
-transDnPojo.setF2_Indicator(f2_Indicator);
-System.out.println("f2_Indicator is "+transDnPojo.getF2_Indicator());
-
-String f2_Memo=F2_Memo.getText();
-
-transDnPojo.setF2_Memo(f2_Memo);
-System.out.println("F2_Memo is "+transDnPojo.getF2_Memo());
-
-String f2_NetworkReconAmount=F2_NetworkReconAmount.getText();
-
-transDnPojo.setF2_NetworkReconAmount(f2_NetworkReconAmount);
-System.out.println("F2_NetworkReconAmount is "+transDnPojo.getF2_NetworkReconAmount());
-
-
-//F3-> Fee 3 Information
-
-String f3_ACQ_ReconAmount=F3_ACQ_ReconAmount.getText();
-
-transDnPojo.setF3_ACQ_ReconAmount(f3_ACQ_ReconAmount);;
-System.out.println("f3_ACQ_ReconAmount is "+transDnPojo.getF3_ACQ_ReconAmount());
-
-String f3_ACQ_ReconCurrency=F3_ACQ_ReconCurrency.getText();
-
-transDnPojo.setF3_ACQ_ReconCurrency(f3_ACQ_ReconCurrency);;
-System.out.println("f3_ACQ_ReconCurrency is "+transDnPojo.getF3_ACQ_ReconCurrency());
-
-String f3_ACQ_ConversionRate=F3_ACQ_ConversionRate.getText();
-
-transDnPojo.setF3_ACQ_ConversionRate(f3_ACQ_ConversionRate);;
-System.out.println("f3_ACQ_ConversionRate is "+transDnPojo.getF3_ACQ_ConversionRate());
-
-String f3_ISS_ReconAmount=F3_ISS_ReconAmount.getText();
-
-transDnPojo.setF3_ISS_ReconAmount(f3_ISS_ReconAmount);;
-System.out.println("f3_ISS_ReconAmount is "+transDnPojo.getF3_ISS_ReconAmount());
-
-String f3_ISS_ReconCurrency=F3_ISS_ReconCurrency.getText();
-
-transDnPojo.setF3_ISS_ReconCurrency(f3_ISS_ReconCurrency);
-System.out.println("f3_ISS_ReconCurrency is "+transDnPojo.getF3_ISS_ReconCurrency());
-
-
-String f3_ISS_ConversionRate=F3_ISS_ConversionRate.getText();
-
-transDnPojo.setF3_ISS_ConversionRate(f3_ISS_ConversionRate);
-System.out.println("f3_ISS_ConversionRate is "+transDnPojo.getF3_ISS_ConversionRate());
-
-
-String f3_Amount=F3_Amount.getText();
-
-transDnPojo.setF3_Amount(f3_Amount);
-System.out.println("f3_Amount is "+transDnPojo.getF3_Amount());
-
-String f3_Currency=F3_Currency.getText();
-
-transDnPojo.setF3_Currency(f3_Currency);;
-System.out.println("f3_Currency is "+transDnPojo.getF3_Currency());
-
-String f3_Type=F3_Type.getText();
-
-transDnPojo.setF3_Type(f3_Type);
-System.out.println("f3_Type is "+transDnPojo.getF3_Type());
-
-String f3_Indicator=F3_Indicator.getText();
-
-transDnPojo.setF3_Indicator(f3_Indicator);
-System.out.println("f3_Indicator is "+transDnPojo.getF3_Indicator());
-
-String f3_Memo=F3_Memo.getText();
-
-transDnPojo.setF3_Memo(f3_Memo);
-System.out.println("F3_Memo is "+transDnPojo.getF3_Memo());
-
-String f3_NetworkReconAmount=F3_NetworkReconAmount.getText();
-
-transDnPojo.setF3_NetworkReconAmount(f3_NetworkReconAmount);
-System.out.println("F3_NetworkReconAmount is "+transDnPojo.getF3_NetworkReconAmount());
 
 //Canister Management
 

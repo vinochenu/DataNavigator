@@ -35,6 +35,10 @@ public class TransactionSearchPageDN {
 	WebElement EndDate;
 	@FindBy(how=How.ID,using="_acqReconInsIdMatch")
 	WebElement Acq_Recon_Inst_ID_radio;
+	
+	/*@FindBy(how=How.ID,using="_acqReconInsIdNotMatch")
+	WebElement Acq_Recon_Inst_ID_radio;*/
+	
 	@FindBy(how=How.NAME,using="acqReconInstId")
 	WebElement Acq_Recon_Inst_ID_data;
 	@FindBy(how=How.NAME,using="retrievalRefNo")
@@ -67,13 +71,17 @@ public class TransactionSearchPageDN {
 		action_enddate.moveToElement(EndDate).click().perform();
 		EndDate.clear();
 		EndDate.sendKeys(DnDate + Keys.ENTER);
+		Thread.sleep(1000);
 		
 		Acq_Recon_Inst_ID_radio.click();
+		Thread.sleep(1000);
 		
 		
 		Acq_Recon_Inst_ID_data.sendKeys(acquirerDN);
+		Thread.sleep(1000);
 		
 		Retrieval_RefNo.sendKeys(refnumDN);
+		Thread.sleep(1000);
 		
 	
 		Search.click();

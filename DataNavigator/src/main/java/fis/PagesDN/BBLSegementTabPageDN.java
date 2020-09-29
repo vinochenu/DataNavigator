@@ -34,7 +34,7 @@ public class BBLSegementTabPageDN {
 	WebElement receiverTaxid;
 	@FindBy(how=How.XPATH,using="//*[text()='VAT Rate:']/following::span[1]")
 	WebElement vatRate;
-	@FindBy(how=How.XPATH,using="//*[text()='VAT']/following::span[1]/following::span[1]")
+	@FindBy(how=How.XPATH,using="//*[text()='VAT']/following::span[1]")
 	WebElement Vat;
 	@FindBy(how=How.XPATH,using="//*[text()='Withholding Tax:']/following::span[1]")
 	WebElement WHT_TAX;
@@ -126,7 +126,7 @@ public class BBLSegementTabPageDN {
 	WebElement BBL_FILLER_3;
 	@FindBy(how=How.XPATH,using="//*[text()='From Fund Code:']/following::span[1]")
 	WebElement FRM_FUND_CODE;
-	@FindBy(how=How.XPATH,using="//*[text()='Account Info 2:']/following::span[1]")
+	@FindBy(how=How.XPATH,using="//*[text()='To Fund Code:']/following::span[1]")
 	WebElement TO_FUND_CODE;
 	@FindBy(how=How.XPATH,using="//*[text()='Unit:']/following::span[1]")
 	WebElement UNIT;
